@@ -50,13 +50,21 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+<<<<<<< Updated upstream:Kyle/PCB_Design/EE209_Library/Project Outputs for EE209_Library/2N3904.LibPkg
 DocumentPath=2N3904.IntLib
+=======
+DocumentPath=schematic.SchDoc
+>>>>>>> Stashed changes:Boshra/PCB_Animatronics/PCB_Animatronics.PrjPcb
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
+<<<<<<< Updated upstream:Kyle/PCB_Design/EE209_Library/Project Outputs for EE209_Library/2N3904.LibPkg
 AnnotateOrder=-1
+=======
+AnnotateOrder=0
+>>>>>>> Stashed changes:Boshra/PCB_Animatronics/PCB_Animatronics.PrjPcb
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -64,6 +72,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
+<<<<<<< Updated upstream:Kyle/PCB_Design/EE209_Library/Project Outputs for EE209_Library/2N3904.LibPkg
 DocumentUniqueId=
 
 [Document2]
@@ -86,6 +95,19 @@ DocumentUniqueId=
 [SearchPath1]
 Path=C:\Users\kbur696\OneDrive - The University of Auckland\Documents\GitHub\ECSE_DESIGN\Kyle\2N3904\*.*
 IncludeSubFolders=1
+=======
+DocumentUniqueId=RNXZBCAC
+
+[Configuration1]
+Name=Sources
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
+ConfigurationType=Source
+>>>>>>> Stashed changes:Boshra/PCB_Animatronics/PCB_Animatronics.PrjPcb
 
 [OutputGroup1]
 Name=Netlist Outputs
