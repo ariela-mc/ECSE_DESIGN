@@ -30,14 +30,23 @@ void loop() {
   // check the status of mp3; visit the library readme for more.
   int adcValue = analogRead(triggerPin);
   float voltage = adcValue * vRef / maxADCValue;
-  if (voltage >= (thresholdVoltage + 0.1) && !isPlaying) {
-    // play first song
-    isPlaying = true;
-    mp3.playStart();
+  if (voltage >= (thresholdVoltage + 0.1)) {
+    // Run motor
+
+    if (!isPlaying) {
+      // play first song
+      isPlaying = true;
+      mp3.playStart();
+    }
   }
-  else if (voltage < (thresholdVoltage - 0.1) && isPlaying) {
-    isPlaying = false;
-    mp3.playStop();
+  else if (voltage < (thresholdVoltage - 0.1)) {
+    // Stop motor
+    
+    if (isPlaying) {
+      // stop song
+      isPlaying = false;
+      mp3.playStop();
+    }
   }
   // delay so that not immediately retriggered
   delay(100);
