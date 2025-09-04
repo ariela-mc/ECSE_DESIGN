@@ -1,0 +1,8 @@
+Change Component Comment : Designator=C2 Old Comment=0.1uF New Comment=10uF
+Change Component Comment : Designator=C1 Old Comment=0.33uF New Comment=10uF
+Change Component Designator: OldDesignator=BATT NewDesignator=P1
+Change Component Designator: OldDesignator=LDR NewDesignator=P2
+Change Component Designator: OldDesignator=MCU NewDesignator=P3
+Added Member To Class: ClassName=schematic Member=Component P1 2 Way
+Added Member To Class: ClassName=schematic Member=Component P2 2 Way
+Added Member To Class: ClassName=schematic Member=Component P3 4 Way

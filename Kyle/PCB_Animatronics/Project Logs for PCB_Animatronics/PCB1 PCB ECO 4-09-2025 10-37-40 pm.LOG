@@ -1,0 +1,4 @@
+Change Net Name : Old Net Name=NetD1_1 New Net Name=NetBATT_2
+Added Member To Class: ClassName=schematic Member=Component BATT 2 Way
+Added Member To Class: ClassName=schematic Member=Component LDR 2 Way
+Added Member To Class: ClassName=schematic Member=Component MCU 4 Way
