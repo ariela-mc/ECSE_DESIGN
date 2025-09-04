@@ -1,0 +1,3 @@
+Change Component Comment : Designator=C2 Old Comment=10uF New Comment=0.1uF
+Change Component Comment : Designator=C1 Old Comment=10uF New Comment=0.33uF
+Change Component Designator: OldDesignator=P3 (MCU) NewDesignator=P3
