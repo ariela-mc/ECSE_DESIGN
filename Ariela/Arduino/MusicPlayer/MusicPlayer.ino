@@ -8,7 +8,7 @@ MD_YX5300 mp3(mp3Serial);
 const int rxPin = 16; // connect to TX of MP3 Player module
 const int txPin = 17; // connect to RX of MP3 Player module
 const int triggerPin = 34; // ADC1 pin for triggering
-const float thresholdVoltage = 2.5; // Hysteresis: 2.4V - 2.6V is when changes
+const float thresholdVoltage = 2.8; // Hysteresis: 2.7V - 2.9V is when changes occur
 const float vRef = 3.3;
 const float maxADCValue = 4095;
 
@@ -30,6 +30,7 @@ void loop() {
   mp3.check();
   // check the status of mp3; visit the library readme for more.
   int adcValue = analogRead(triggerPin);
+
   // find voltage by converting value from adc pin
   float voltage = adcValue * vRef / maxADCValue;
   if (voltage >= (thresholdVoltage + 0.1)) {
