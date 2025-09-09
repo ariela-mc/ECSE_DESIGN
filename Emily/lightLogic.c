@@ -92,6 +92,7 @@ void process_light_logic(void) {
     
     // Only change behavior if light level has changed
     if (current_level != previous_level) {
+
         
         switch (current_level) {
             case LIGHT_DARK:
@@ -107,6 +108,7 @@ void process_light_logic(void) {
                 printf("Unknown light level\n");
                 break;
         }
+        
         previous_level = current_level;
     }
 }
