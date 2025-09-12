@@ -104,10 +104,12 @@ void setup() {
   // displayText("SYNC");
   Serial.println("Waiting for time sync...");
   
-  
+ 
   
   //SERVO SETUP
   servo1.attach(servoPin1, 500, 2500);
+  servo2.attach(servoPin2, 500, 2500);
+
   
   //SPEAKER SETUP
    analogReadResolution(12); // setting ADC to 12 bits
@@ -143,7 +145,11 @@ void loop() {
   if (voltage >= (thresholdVoltage + hysteresis/2)) {
 	  
     if (!isPlaying) {
-	  // INSERT CODE FOR RUNNING THE MOTOR - put this in a loop? 
+	  //LED display
+	  displayText("AHHH");
+      delay(1000);
+	  
+	  //SPEAKER 
       Serial.println("play");
       // play first song
       isPlaying = true;
@@ -151,16 +157,22 @@ void loop() {
 	  
 	  //SERVO CODE
 	  servo1.write(90);
+	  servo2.write(90);
+
 	  delay(1000);       // Wait for 1 second
    
       servo1.write(0);
+	  servo2.write(0);
+
       delay(1000);  
 
-      servo2.write(180);
-      delay(1000);
+      servo1.write(90);
+	  servo2.write(90);
 
-      servo2.write(0);
-      delay(1000);
+	  delay(1000);       // Wait for 1 second
+   
+      servo1.write(0);
+	  servo2.write(0);
     }
   }
   else if (voltage <= (thresholdVoltage - hysteresis/2)) {
